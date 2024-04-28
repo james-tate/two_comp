@@ -1,0 +1,26 @@
+repos:
+-   repo: local
+    hooks:
+      - id: check-yaml
+        name: Run check yaml
+        entry: check-yaml
+        language: python
+        types: [yaml]
+      - id: end-of-file-fixer
+        name: Run end-of-file-fixer
+        entry: end-of-file-fixer
+        language: python
+      - id: isort
+        name: Run isort
+        entry: isort
+        language: python
+      - id: black
+        name: Run black
+        entry: black
+        language: python
+        files: src
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
