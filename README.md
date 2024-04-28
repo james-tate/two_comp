@@ -1,5 +1,6 @@
 # two_comp
-A library for converting integer numbers to twos complement values
+
+A python library for converting numbers to twos complement values
 
 ## Example usage
 
