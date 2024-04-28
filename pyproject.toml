@@ -6,13 +6,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "two_comp"
+version = "0.0.1"
 authors = [
     {name = "james_tate"}
 ]
 requires-python = ">=3.8"
-dependencies = [
-]
-dynamic = ["version"]
+license = {file = "LICENSE"}
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/james-tate/two_comp"
+Repository = "https://github.com/james-tate/two_comp"
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -25,10 +30,9 @@ include = 'src'
 develop = [
     "isort",
     "black",
-    "flake8",
     "pylint",
     "pre-commit-hooks",
-    "pdoc",
     "pytest",
-    "ipython",
+    "random",
+    "ctypes",
 ]
