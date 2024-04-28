@@ -1,5 +1,5 @@
 # two_comp
-A library for converting numbers to twos complement values
+A library for converting integer numbers to twos complement values
 
 ## Example usage
 
@@ -21,4 +21,16 @@ A library for converting numbers to twos complement values
 43981
 >>> two_comp.twos_8(0xf)
 15
+```
+
+### Install
+
+From pip
+``` pip install two-comp ```
+
+From source
+``` 
+git clone git@github.com:james-tate/two_comp.git
+cd two_comp
+pip install .
 ```
